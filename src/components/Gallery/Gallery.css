@@ -1,0 +1,150 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+}
+
+/* Slide — layout em 2 colunas */
+.gallery__slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 80px;
+  gap: 32px;
+}
+
+/* Coluna esquerda — texto */
+.gallery__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 400px;
+}
+
+.gallery__tag {
+  font-size: 14px;
+  font-weight: 600;
+  color: #F6AA1C;
+}
+
+.gallery__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1F1F1F;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.gallery__description {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.gallery__button {
+  display: inline-block;
+  background-color: #C92071;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.gallery__button:hover {
+  background-color: #991956;
+}
+
+/* Coluna direita — imagem */
+.gallery__image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 55%;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Bolinhas indicadoras */
+.gallery__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 0 24px;
+}
+
+.gallery__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #CCCCCC;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease;
+}
+
+.gallery__dot--active {
+  background-color: #C92071;
+}
+
+/* Thumbnails opcionais */
+.gallery__thumbs {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 16px;
+}
+
+.gallery__thumb {
+  width: 117px;
+  height: 95px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: border 0.2s ease;
+}
+
+/* Setas de navegação */
+.gallery__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease;
+}
+
+.gallery__arrow--left { left: 16px; }
+.gallery__arrow--right { right: 16px; }
+
+.gallery__arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.gallery__arrow img {
+  width: 20px;
+  height: 20px;
+}
