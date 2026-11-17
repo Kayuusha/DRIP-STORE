@@ -1,0 +1,35 @@
+.section {
+  padding: 40px 7%;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.section-header-center {
+  justify-content: center;
+  position: relative;
+}
+
+.section-header-center .section-link {
+  position: absolute;
+  right: 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #474747;
+}
+
+.section-link {
+  font-size: 18px;
+  color: #c92071;
+}
+
+.section-link:hover {
+  text-decoration: underline;
+}
