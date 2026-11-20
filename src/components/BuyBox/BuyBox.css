@@ -1,0 +1,100 @@
+.buybox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.buybox-name {
+  font-size: 32px;
+  color: #1f1f1f;
+}
+
+.buybox-reference {
+  font-size: 12px;
+  color: #666666;
+}
+
+.buybox-reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buybox-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f6aa1c;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.buybox-stars img {
+  width: 14px;
+  height: 14px;
+  filter: brightness(0) invert(1);
+}
+
+.buybox-rating {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.buybox-prices {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.buybox-price-discount {
+  font-size: 32px;
+  font-weight: 700;
+  color: #474747;
+}
+
+.buybox-price-old {
+  font-size: 16px;
+  color: #cccccc;
+  text-decoration: line-through;
+}
+
+.buybox-description-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.buybox-description-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #8f8f8f;
+}
+
+.buybox-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #474747;
+}
+
+.buybox-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+.buybox-button {
+  width: 220px;
+  height: 48px;
+  background-color: #f6aa1c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
