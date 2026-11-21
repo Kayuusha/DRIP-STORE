@@ -1,0 +1,33 @@
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-group-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #474747;
+}
+
+.filter-group-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #474747;
+  cursor: pointer;
+}
+
+.filter-group-item input {
+  width: 22px;
+  height: 22px;
+  accent-color: #c92071;
+  cursor: pointer;
+}
